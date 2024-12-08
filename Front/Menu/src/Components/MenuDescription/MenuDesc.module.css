@@ -1,0 +1,207 @@
+
+.menuDescription {
+  background-image: url("../../../public/Rectangle1.png");
+  min-height: 50vh; 
+  height: auto; 
+  width: 100%; 
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  color: white;
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+.centerPortion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 60%;
+  padding: 10px;
+}
+
+.backgroundsideImageLeft {
+  background-image: url("../../../public/Frame1.png");
+  min-height: 30vh; 
+  height: auto;
+  width: 15%; 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.backgroundsideImageRight {
+  background-image: url("../../../public/Frame.png");
+  min-height: 30vh; 
+  height: auto;
+  width: 15%; 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.innerContainer {
+  border: 1px solid #ffffff;
+  width: 100%;
+  max-width: 960px;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  height: auto;
+  display: flex;
+  margin-top: 130px;
+  margin-bottom: 130px;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.imageTopRight {
+  background-image: url("../../../public/Juice_glass.png");
+  width: 150px; 
+  height: 221px;
+  position: absolute;
+  top: -150px;
+  left: -30px;
+  background-size: cover;
+  background-position: center;
+}
+
+.imageBottomLeft {
+  background-image: url("/Cocktail_glass.png");
+  width: 150px; 
+  height: 167px;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (max-width: 768px) {
+  .menuDescription {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 10px;
+  }
+
+  .backgroundsideImageLeft,
+  .backgroundsideImageRight {
+    display: none;
+  }
+
+  .centerPortion {
+    flex: 1 1 100%; 
+    padding: 10px;
+  }
+
+  .innerContainer {
+    width: 100%; 
+    margin: 20px auto;
+    height: auto;
+  }
+
+  .imageTopRight {
+    top: -60px; 
+    left: -30px;
+    width: 80px;
+    height: 120px;
+  }
+
+  .imageBottomLeft {
+    bottom: -10px;
+    width: 80px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .backgroundsideImageLeft,
+  .backgroundsideImageRight {
+    display: none; 
+  }
+
+  .innerContainer {
+    padding: 10px;
+  }
+
+  .imageTopRight,
+  .imageBottomLeft {
+    width: 60px;
+    height: 90px;
+  }
+}
+
+.line {
+  width: 68px;
+  height: 2px; 
+  background-color: white; 
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.headings{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuContent {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 16px; 
+}
+
+@media (min-width: 768px) {
+  .menuContent {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+
+.menuContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px; 
+}
+
+
+@media (min-width: 768px) {
+  .menuContent {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+
+.menuItem {
+  padding: 16px;
+  text-align: left; 
+  color: #fff; 
+}
+
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 8px;
+}
+
+.menuItem h2 {
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+
+.menuItem p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.75); 
+  margin: 0 0 12px;
+  line-height: 1.4;
+  font-family: "Kelly Slab", sans-serif;
+}
+
+.menuItem h3 {
+  font-size: 2rem;
+  color: #fff; 
+  margin: 0;
+  font-weight: bold;
+}

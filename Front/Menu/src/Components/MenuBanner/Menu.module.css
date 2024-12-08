@@ -1,0 +1,74 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Banner {
+    background-image: url("../../../public/Background_image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 311px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+   
+  }
+  
+  .Banner h1 {
+    color: white;
+    font-size: 5vw; 
+    font-weight: 600;
+    letter-spacing: 0.1em; 
+    text-shadow: 4px 3px 0px #800020;
+  }
+  
+  .Banner p {
+    color: #BBBBBB;
+    text-align: center;
+    max-width: 70%; 
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw; 
+    line-height: 1.5em; 
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .Banner {
+      height: 50vh; 
+      padding: 10px;
+    }
+  
+    .Banner h1 {
+      font-size: 8vw; 
+    }
+  
+    .Banner p {
+      font-size: 3vw; 
+      line-height: 1.4em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Banner {
+      height: auto; 
+      padding: 20px;
+    }
+  
+    .Banner h1 {
+      font-size: 10vw; 
+    }
+  
+    .Banner p {
+      font-size: 4vw; 
+    }
+  }
+  

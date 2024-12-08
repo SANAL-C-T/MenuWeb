@@ -1,0 +1,173 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+.navbarContainer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  padding-top: 55px;
+}
+
+.left {
+  margin-left: 100px;
+}
+
+.right {
+  margin-right: 100px;
+}
+
+.leftUl {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+}
+
+.rightUl {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  width: 370px;
+  font-size: 16px;
+  letter-spacing: 3%;
+}
+
+li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+li img {
+  width: 80px;
+  height: 70px;
+  position: relative;
+  margin-top: 10px;
+}
+.deep {
+  color: #0796ef;
+  height: 52px;
+}
+.net {
+  color: white;
+}
+.soft {
+  color: #857878;
+  line-height: 15px;
+}
+.Brandname {
+  font-size: 35px;
+  letter-spacing: 3%;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbarContainer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .left,
+  .right {
+    margin: 0;
+  }
+
+  .leftUl,
+  .rightUl {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  li img {
+    width: 50px;
+  }
+
+  .Brandname {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarContainer {
+    padding: 5px;
+  }
+
+  .leftUl,
+  .rightUl {
+    gap: 10px;
+  }
+
+  li img {
+    width: 40px;
+  }
+
+  .Brandname {
+    font-size: 18px;
+  }
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+.hamburger img {
+  width: 30px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    margin-left: 90%;
+  }
+
+  .right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+
+    background-color: #514f4f;
+    width: 90%;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+
+  .rightUl {
+    flex-direction: column;
+    margin: 0;
+    padding: 16px;
+  }
+
+  .rightUl li {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Brandname {
+    display: none;
+  }
+
+  li img {
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+  }
+  .navbarContainer {
+    height: 55px;
+  }
+}

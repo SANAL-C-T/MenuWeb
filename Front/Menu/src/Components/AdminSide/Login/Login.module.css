@@ -1,0 +1,27 @@
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; 
+    background-color: #a0d1e4; 
+    
+}
+
+.loginBtn{
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+}
+
+.loginPass{
+    height: 40px;
+    width: 400px;
+    padding: 10px;
+}
+
+.loginName{
+    height: 40px;
+    width: 400px;
+    padding: 10px;
+}

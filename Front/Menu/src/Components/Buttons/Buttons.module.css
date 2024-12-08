@@ -1,0 +1,79 @@
+
+
+.buttons {
+    background-image: url("../../../public/backgroundDesigns1.png");
+    background-size: cover; 
+    background-position: center; 
+    height: 79px;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    box-sizing: border-box;
+  }
+  
+  .buttonContainer {
+    width: 100%; 
+    max-width: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .Clickbutton {
+    flex: 1; 
+    max-width: 120px; 
+    height: 50px; 
+    background: none;
+    border: 0.5px solid #0796EF;
+    color: #FFFFFF;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    text-shadow: 1.3px 0.97px 0px #800020;
+    cursor: pointer;
+    transition: background-color 0.3s ease, text-shadow 0.3s ease; 
+  }
+  
+  .Clickbutton:hover {
+    background-color: #0796EF;
+    text-shadow: none;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .buttons {
+      height: auto;
+      padding: 20px;
+    }
+  
+    .buttonContainer {
+      flex-direction: row; 
+      align-items: center;
+      gap: 15px;
+    }
+  
+    button {
+      width: 100%; 
+      max-width: none; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .buttons {
+      padding: 15px;
+    }
+  
+    .buttonContainer {
+      gap: 10px;
+    }
+  
+    button {
+      font-size: 14px;
+      height: 45px; 
+    }
+  }
+  
