@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         <div className={style.logo}>
-          <img src="../../../public/Logo(1).png"></img>
+          <img src="../../../public/Logo.png"></img>
           <h3 className={style.Brandname}>
             <span className={style.deep}>DEEP </span>
             <span className={style.net}>NET </span>

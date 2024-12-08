@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className={style.left}>
         <ul  className={style.leftUl}>
           <li>
-            <img src="../../../public/Logo(1).png" alt="DeepSoft Logo" />
+            <img src="../../../public/Logo.png" alt="DeepSoft Logo" />
           </li>
           <li>
             <h2 className={style.Brandname}>
