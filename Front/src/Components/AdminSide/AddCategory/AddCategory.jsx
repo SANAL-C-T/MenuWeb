@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import style from "./AddCategory.module.css";
-const baseUrl = import.meta.env.VITE_API_URL;
+const baseUrl = "https://menuweb2.onrender.com";
 import axios from "axios";
 
 const AddCategory = () => {

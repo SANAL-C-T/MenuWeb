@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import style from "./Buttons.module.css";
-const baseUrl = import.meta.env.VITE_API_URL;
+const baseUrl = "https://menuweb2.onrender.com";
 import axios from "axios";
 
 const Buttons = ({ setMenuData, categories }) => {

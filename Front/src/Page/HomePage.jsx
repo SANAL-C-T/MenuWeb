@@ -4,7 +4,7 @@ import MenuBanner from "../Components/MenuBanner/MenuBanner";
 import Buttons from "../Components/Buttons/Buttons";
 import MenuDesc from "../Components/MenuDescription/MenuDesc";
 import Footer from "../Components/Footer/Footer";
-const baseUrl = import.meta.env.VITE_API_URL;
+const baseUrl = "https://menuweb2.onrender.com";
 import axios from "axios";
 
 const HomePage = () => {

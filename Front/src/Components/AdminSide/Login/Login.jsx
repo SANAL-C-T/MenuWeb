@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import style from "./Login.module.css";
 
-const baseUrl = import.meta.env.VITE_API_URL;
+const baseUrl = "https://menuweb2.onrender.com";
 
 const Login = () => {
   const nameRef = useRef(null);

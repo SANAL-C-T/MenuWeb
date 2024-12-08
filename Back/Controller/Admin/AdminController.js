@@ -3,13 +3,13 @@ const categoryData = require("../../Model/CategoryModel");
 const menuData = require("../../Model/MenuModel")
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const key= process.env.JWT_SECRET;
+const key = process.env.JWT_SECRET;
 
 const login = async (req, res) => {
     try {
         const inputname = req.body.name;
         const inputpassword = req.body.password;
-
+        console.log("req to login comming...")
         const user = await adminData.findOne({ Name: inputname });
 
         if (!user) {
@@ -22,7 +22,7 @@ const login = async (req, res) => {
             return res.status(401).json({ message: 'Invalid password' });
         }
         const token = jwt.sign({ admin: user.Name }, key, { expiresIn: '1h' });
-        res.status(200).json({ message: 'Login successful',token});
+        res.status(200).json({ message: 'Login successful', token });
     } catch (error) {
         console.error("Error during login:", error);
         res.status(500).json({ message: 'Server error' });
@@ -33,7 +33,7 @@ const AddCategory = async (req, res) => {
     try {
         const categoryName = req.body.categoryName;
         const existingCategory = await categoryData.findOne({ categoryName: categoryName });
-
+        console.log("req to addcat comming...")
         if (!existingCategory) {
             const newCat = new categoryData({
                 categoryName: categoryName
@@ -55,7 +55,7 @@ const AddMenuItem = async (req, res) => {
         const description = req.body.description;
         const category = req.body.category;
         const price = req.body.price;
-
+        console.log("req to addmenu comming...")
         console.log({ name, description, category, price });
         const existingItem = await menuData.findOne({ Item_Name: name });
         if (!existingItem) {
@@ -82,6 +82,7 @@ const AddMenuItem = async (req, res) => {
 const getCategory = async (req, res) => {
     try {
         let allCategory = await categoryData.find({})
+        console.log("req to getcat comming...")
         res.status(200).json({ data: allCategory });
     } catch (error) {
         console.error("Error in adding:", error);
